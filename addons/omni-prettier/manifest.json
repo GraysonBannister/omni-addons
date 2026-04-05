@@ -1,0 +1,13 @@
+{
+  "id": "omni-prettier",
+  "name": "Omni Prettier",
+  "description": "Runs Prettier on your files through the agent. Format a single file, a directory, or your entire workspace.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["formatting", "javascript", "typescript"],
+  "repo": "https://github.com/GraysonBannister/omni-prettier",
+  "download": "https://github.com/GraysonBannister/omni-prettier/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}

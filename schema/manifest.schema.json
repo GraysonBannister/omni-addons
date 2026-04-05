@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/GraysonBannister/omni-addons/schema/manifest.schema.json",
+  "title": "Omni Code Add-on Manifest",
+  "description": "Schema for manifest.json files in the omni-addons registry.",
+  "type": "object",
+  "required": ["id", "name", "description", "author", "version", "repo", "download", "entrypoint"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique kebab-case identifier for the add-on.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 64
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name.",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of what the add-on does (max 200 chars).",
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "author": {
+      "type": "string",
+      "description": "GitHub username of the author.",
+      "pattern": "^[a-zA-Z0-9]([a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version string.",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(-[a-zA-Z0-9.]+)?(\\+[a-zA-Z0-9.]+)?$"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Category tags for filtering in the registry.",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 24
+      },
+      "maxItems": 8,
+      "uniqueItems": true
+    },
+    "repo": {
+      "type": "string",
+      "description": "URL of the add-on's source repository.",
+      "format": "uri",
+      "pattern": "^https://github\\.com/"
+    },
+    "download": {
+      "type": "string",
+      "description": "Direct URL to download the add-on as a zip archive.",
+      "format": "uri"
+    },
+    "entrypoint": {
+      "type": "string",
+      "description": "Relative path to the main JS file Omni Code loads.",
+      "pattern": ".*\\.js$"
+    },
+    "minOmniCodeVersion": {
+      "type": "string",
+      "description": "Minimum Omni Code version required.",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "platforms": {
+      "type": "array",
+      "description": "Platforms this add-on supports.",
+      "items": {
+        "type": "string",
+        "enum": ["desktop", "mobile"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Optional URL to documentation or a homepage.",
+      "format": "uri"
+    }
+  }
+}

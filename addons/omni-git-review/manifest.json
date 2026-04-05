@@ -1,0 +1,13 @@
+{
+  "id": "omni-git-review",
+  "name": "Omni Git Review",
+  "description": "Automated PR reviewer. Summarizes diffs, flags issues, suggests improvements, and writes commit messages.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["git", "review", "pr", "automation"],
+  "repo": "https://github.com/GraysonBannister/omni-git-review",
+  "download": "https://github.com/GraysonBannister/omni-git-review/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop", "mobile"]
+}

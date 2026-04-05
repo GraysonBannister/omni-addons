@@ -1,0 +1,43 @@
+name: Validate Manifests
+
+on:
+  pull_request:
+    paths:
+      - "addons/**"
+      - "schema/**"
+      - "scripts/**"
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate add-on manifests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate manifests
+        run: node scripts/validate.js
+
+      - name: Check for duplicate IDs
+        run: |
+          ids=$(find addons -name "manifest.json" -exec node -e "
+            const fs = require('fs');
+            const m = JSON.parse(fs.readFileSync(process.argv[1]));
+            console.log(m.id);
+          " {} \; | sort)
+          dupes=$(echo "$ids" | uniq -d)
+          if [ -n "$dupes" ]; then
+            echo "ERROR: Duplicate add-on IDs found:"
+            echo "$dupes"
+            exit 1
+          fi
+          echo "No duplicate IDs found."

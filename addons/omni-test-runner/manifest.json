@@ -1,0 +1,13 @@
+{
+  "id": "omni-test-runner",
+  "name": "Omni Test Runner",
+  "description": "Run, analyze, and fix failing tests through the agent. Supports Jest, Vitest, Pytest, and TAP-compatible frameworks.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["testing", "jest", "vitest", "python"],
+  "repo": "https://github.com/GraysonBannister/omni-test-runner",
+  "download": "https://github.com/GraysonBannister/omni-test-runner/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
