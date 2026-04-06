@@ -1,0 +1,13 @@
+{
+  "id": "omni-changelog",
+  "name": "Omni Changelog",
+  "description": "Generate changelogs from git commit history with support for conventional commits and flexible formatting options.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["git", "changelog", "documentation", "automation"],
+  "repo": "https://github.com/GraysonBannister/omni-changelog",
+  "download": "https://github.com/GraysonBannister/omni-changelog/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
