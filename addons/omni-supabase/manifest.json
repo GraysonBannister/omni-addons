@@ -1,0 +1,13 @@
+{
+  "id": "omni-supabase",
+  "name": "Omni Supabase",
+  "description": "Connect to Supabase via Personal Access Token. Browse projects, inspect table schemas, and run SQL queries through the agent.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["supabase", "database", "sql", "schema", "postgres"],
+  "repo": "https://github.com/GraysonBannister/omni-supabase",
+  "download": "https://github.com/GraysonBannister/omni-supabase/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
