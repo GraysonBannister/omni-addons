@@ -1,0 +1,13 @@
+{
+  "id": "omni-netlify",
+  "name": "Omni Netlify",
+  "description": "Connect to Netlify via Personal Access Token. Manage sites, deploys, environment variables, and functions through the agent.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["netlify", "deployment", "hosting", "ci-cd"],
+  "repo": "https://github.com/GraysonBannister/omni-netlify",
+  "download": "https://github.com/GraysonBannister/omni-netlify/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
