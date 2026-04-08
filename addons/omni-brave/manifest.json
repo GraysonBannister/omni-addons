@@ -1,0 +1,13 @@
+{
+  "id": "omni-brave",
+  "name": "Omni Brave",
+  "description": "Integrate Brave Browser AI: Brave Search API for AI-powered web search, browser automation, and Leo AI chat. Optional dependencies: Playwright for browser features.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["brave", "browser", "search", "ai", "leo"],
+  "repo": "https://github.com/GraysonBannister/omni-brave",
+  "download": "https://github.com/GraysonBannister/omni-brave/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
