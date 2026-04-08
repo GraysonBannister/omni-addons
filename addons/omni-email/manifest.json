@@ -1,0 +1,13 @@
+{
+  "id": "omni-email",
+  "name": "Omni Email",
+  "description": "Read email from Gmail and Outlook via IMAP using app passwords. All tools require explicit approval (DANGEROUS permission level) due to PII sensitivity.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["email", "gmail", "outlook", "imap", "read-only"],
+  "repo": "https://github.com/GraysonBannister/omni-email",
+  "download": "https://github.com/GraysonBannister/omni-email/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
