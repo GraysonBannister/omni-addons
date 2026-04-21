@@ -3,11 +3,17 @@
   "name": "Omni Terse",
   "description": "Reduces output token usage by injecting a terse-output system prompt fragment. Works with all LLM providers. Inspired by the Caveman token optimization technique.",
   "author": "GraysonBannister",
-  "version": "1.0.0",
-  "tags": ["token-efficiency", "performance", "context"],
+  "version": "1.0.1",
+  "tags": [
+    "token-efficiency",
+    "performance",
+    "context"
+  ],
   "repo": "https://github.com/GraysonBannister/omni-terse",
   "download": "https://github.com/GraysonBannister/omni-terse/archive/refs/heads/main.zip",
   "entrypoint": "index.js",
   "minOmniCodeVersion": "2.0.0",
-  "platforms": ["desktop"]
+  "platforms": [
+    "desktop"
+  ]
 }
